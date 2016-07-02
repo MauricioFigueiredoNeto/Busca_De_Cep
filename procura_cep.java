@@ -1,13 +1,13 @@
 /**
- * Leitura e LocalizaÁ„o de Cep
+ * Leitura e Localiza√ß√£o de Cep
  * @author Mauricio Figueiredo Neto
  */
     public void buscaCep() {
         //Faz a busca para o cep 58043-280
         WebServiceCep webServiceCep = WebServiceCep.searchCep(cep1.getText());
-        //A ferramenta de busca ignora qualquer caracter que n?o seja n?mero.
+        //A ferramenta acima ignora qualquer tipo de caracter que n√£o seja numero.
 
-        //caso a busca ocorra bem, imprime os resultados.
+        //caso a busca ocorra bem, os resultados sao:
         if (webServiceCep.wasSuccessful()) {
             r1.setText(webServiceCep.getLogradouroFull());
             c1.setText(webServiceCep.getCidade());
@@ -19,9 +19,9 @@
             System.out.println("Cidade: "
                     + webServiceCep.getCidade() + "/" + webServiceCep.getUf());
 
-            //caso haja problemas imprime as exce??es.
+            //Caso haja problemas a mensagem sera essa abaixo:
         } else {
-            JOptionPane.showMessageDialog(null, "CEP Inv·lido: " + webServiceCep.getResultText());
+            JOptionPane.showMessageDialog(null, "CEP Inv√°lido: " + webServiceCep.getResultText());
         }
     }
 
