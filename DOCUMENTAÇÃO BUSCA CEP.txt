@@ -1,0 +1,7 @@
+#DOCUMENTAÇÃO PROGRAMA PROCRURA CEP MAURICIO#
+
+"procura_cep.java" - Arquivo utilizado para escrever na tela do úsuario e mostra formulários. Também Responsavél por enviar as informações para a classe "WebServiceCep.java" que retorna com o resultado.
+
+"WebServiceCep.java" - Classe utilizada para a validação do CEP que busca o endereço e retorna com Rua, Bairro, Cidade e Estado. 
+
+"WebServiceCep.java" - Lib Utilizada para o projeto. 
